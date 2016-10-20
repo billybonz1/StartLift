@@ -1,0 +1,153 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+//First screen styles
+
+.header
+  background-color: #f7f6f6
+
+.logo
+  padding: 38px 0 0 70px
+.popup-button
+  padding: 38px 70px 0 0
+  button
+    background-color: #fff
+    border: 1px solid #e42a1f
+    border-radius: 10px
+    font-size: 14px
+    color: #2e4861
+
+
+.forma
+  background-position: 70px 80px
+  background-repeat: no-repeat
+  background-image: url("../img/backg.png")
+  position: relative
+
+
+
+.forma:after
+  top: 100%
+  left: 50%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 50px
+  position: absolute
+  pointer-events: none
+
+
+.forma:after
+  border-color: rgba(248, 247, 247, 0)
+  border-top-color: #f8f7f7
+  border-width: 90px
+  margin-left: -90px
+  border-top-width: 30px
+
+
+
+.forma-text
+  margin-top: 48px
+  a
+    font-size: 24px
+    color: #2e4861
+
+  h2
+    padding-top: 31px
+    margin: 0
+    line-height: 30px
+    font-family: ProximaBold
+    font-weight: bold
+  p
+    font-size: 18px
+    line-height: 18px
+    font-weight: bold
+    margin: 0
+    padding-top: 22px
+
+.form-otp
+  form
+    background-color: #fff
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.4)
+    max-width: 370px
+    min-height: 280px
+    text-align: center
+    font-size: 18px
+    margin-bottom: 80px
+    margin-top: 36px
+    input
+      width: 90%
+      padding-left: 18px
+      background-color: #f2f2f2
+      border-radius: 6px
+      color: #a4a4a4 !important
+      border: none
+      padding-top: 8px
+      padding-bottom: 9px
+      font-family: ProximaLight
+      @include placeholder
+        color: #a4a4a4
+
+
+    p
+      padding-left: 8px
+      margin: 0
+      text-align: left
+      padding-left: 38px
+      padding-bottom: 7px
+      padding-top: 15px
+
+    button
+      background-color: #e42a1f
+      font-family: ProximaBold
+      border-radius: 25px
+      text-align: center
+      color: #ffffff
+      line-height: 18px
+      font-size: 18px
+      padding-top: 3px
+      padding-bottom: 11px
+      padding-left: 45px
+      padding-right: 45px
+      border: none
+      margin-top: 25px
+      font-weight: bold
+      &:hover
+        background-color: #bd1b11
+
+
+
+
+.title-scary
+  padding-top: 53px
+  font-weight: bold
+  font-size: 30px
+  text-align: center
+  font-family: ProximaBold
+
+.info-text
+  padding-top: 90px
+  background-image: url("../img/man.png")
+  background-repeat: no-repeat
+  background-position: bottom right
+  .info-item:nth-child(2)
+      img
+        padding-left: 15px
+        padding-right: 27px
+  .info-item:nth-child(3)
+      img
+        padding-left: 15px
+        padding-right: 20px
+.info-item
+  font-size: 18px
+  padding-bottom: 53px
+  padding-left: 100px
+
+  p
+    display: inline-block
+    vertical-align: top
+  img
+    padding-right: 30px
+    display: inline-block
+
