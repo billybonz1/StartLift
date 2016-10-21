@@ -1,6 +1,7 @@
 @import "bourbon"
 @import "sass/vars"
 @import "sass/base"
+@import "libs/magnific-popup/dist/magnific-popup.css"
 
 //First screen styles
 
@@ -11,7 +12,7 @@
   padding: 38px 0 0 70px
 .popup-button
   padding: 38px 70px 0 0
-  button
+  a
     background-color: #f5f4f5
     transition: 1s
     font-family: ProximaRegular
@@ -21,9 +22,12 @@
     color: #2e4861
     padding: 3px 16px
     text-transform: uppercase
+    display: block
     &:hover
       color: #fff
       background-color: #e42a1f
+      text-decoration: none
+      cursor: pointer
 
 
 
@@ -80,20 +84,19 @@
     margin: 0
     padding-top: 18px
 
-.form-otp
-  form
-    background-color: #fff
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.4)
-    max-width: 370px
-    min-height: 280px
-    text-align: center
-    font-size: 18px
-    margin-bottom: 80px
-    margin-top: 36px
-    p:nth-child(1)
+.form-mp
+  background-color: #fff
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.4)
+  max-width: 370px
+  min-height: 280px
+  text-align: center
+  font-size: 18px
+  margin-bottom: 80px
+  margin-top: 36px
+  p:nth-child(1)
       padding-top: 20px
 
-    input
+  input
       width: 84%
       padding-left: 18px
       background-color: #f2f2f2
@@ -107,7 +110,7 @@
         color: #a4a4a4
 
 
-    p
+  p
       padding-left: 8px
       margin: 0
       text-align: left
@@ -115,7 +118,7 @@
       padding-bottom: 7px
       padding-top: 3px
 
-    button
+  button
       background-color: #e42a1f
       transition: 1s
       font-family: ProximaBold
@@ -136,6 +139,18 @@
 
 
 
+.margin-popup
+  margin-left: 35%
+.mfp-close-btn-in .mfp-close
+  color: #fff
+  background-color: red
+  border-radius: 25px
+.mfp-close:active
+  top: 35px
+.mfp-close
+  right: 32%
+  top: 35px
+  opacity: 1
 
 .title-scary
   padding-top: 78px
